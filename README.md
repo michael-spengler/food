@@ -6,13 +6,13 @@ Deno module for food lovers. This module leverages data from https://world.openf
 
 ```
 
-import { FoodInfoProvider } from "https://raw.githubusercontent.com/michael-spengler/food/master/food-info-provider.ts"
-<!-- import { FoodInfoProvider } from "https://deno.land/x/food/food-info-provider.ts" -->
+import { FoodInfoProvider } from "https://raw.githubusercontent.com/michael-spengler/food/master/infoprovider.ts"
+// import { FoodInfoProvider } from "https://deno.land/x/food/infoprovider.ts"
 
-const foodId = '1234'
-const foodInfo = FoodInfoProvider.getInfo(foodId)
+const productID = '737628064502'
+const foodInfo = FoodInfoProvider.getProductInfo(productID)
 
-console.log(`I found the following info for foodId ${foodId}: \n${foodInfo}\n`)
+console.log(`I found the following info for product ${productID}: \n${foodInfo}\n`)
 
 ```
 

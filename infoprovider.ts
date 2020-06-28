@@ -7,14 +7,13 @@ export class FoodInfoProvider {
         let apiResult
         try {
             apiResult = await axiod.get(infoProviderURL)
-        } catch(error){
+        } catch (error) {
             throw new Error(`The following error occurred while retrieving data for product ${productID}: ${error.message}`)
         }
-        
-        if (apiResult.status === 200){
-            return apiResult
-        } else {
-            throw new Error(`Unexpected status from API call: ${apiResult.status} - ${apiResult.statusText}`)
+
+        if (apiResult.status === 200) {
+            return apiResult.data
         }
+        throw new Error(`Unexpected status from API call: ${apiResult.status} - ${apiResult.statusText}`)
     }
 }
