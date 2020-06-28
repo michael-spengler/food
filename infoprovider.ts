@@ -12,7 +12,7 @@ export class FoodInfoProvider {
         }
 
         if (apiResult.status === 200) {
-            return apiResult.data
+            return apiResult.data.product
         }
         throw new Error(`Unexpected status from API call: ${apiResult.status} - ${apiResult.statusText}`)
     }
