@@ -1,5 +1,7 @@
 # Food Module
 
+Deno module for food lovers. This module leverages data from https://world.openfoodfacts.org/ and more providers about to come.
+
 ## Usage example for your code
 
 ```
