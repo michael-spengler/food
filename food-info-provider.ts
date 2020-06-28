@@ -4,8 +4,17 @@ export class FoodInfoProvider {
 
     public static async getProductInfo(productID: string): Promise<any> {
         const infoProviderURL = `https://world.openfoodfacts.org/api/v0/product/${productID}.json`
-        const apiResult = await axiod.get(infoProviderURL)
+        let apiResult
+        try {
+            apiResult = await axiod.get(infoProviderURL)
+        } catch(error){
+            throw new Error(`The following error occurred while retrieving data for product ${productID}: ${error.message}`)
+        }
         
-        return apiResult
+        if (apiResult.status === 200){
+            return apiResult
+        } else {
+            throw new Error(`Unexpected status from API call: ${apiResult.status} - ${apiResult.statusText}`)
+        }
     }
 }
