@@ -1,12 +1,17 @@
-# Cities Module
+# Food Module
+
+Deno module for food lovers. This module leverages data from https://world.openfoodfacts.org/ and more providers about to come.  
+Feel free to add recipes etc.
 
 ## Usage example for your code
 
 ```
 
-import { CityService } from "https://raw.githubusercontent.com/michael-spengler/cities/master/cityservice.ts"
-// import { CityService } from "https://deno.land/x/food/cityservice.ts"
+import { FoodInfoProvider } from "https://raw.githubusercontent.com/michael-spengler/food/master/infoprovider.ts"
+// import { FoodInfoProvider } from "https://deno.land/x/food/food-info-provider.ts"
 
+const productID = '737628064502'
+const foodInfo = await FoodInfoProvider.getProductInfo(productID)
 
 console.log(`I found the following info for product ${productID}: \n${JSON.stringify(foodInfo)}\n`)
 
