@@ -1,7 +1,7 @@
 # Food Module
 
-Deno module for food lovers. This module leverages data from https://world.openfoodfacts.org/ and more providers about to come.  
-Feel free to add recipes etc.
+This module leverages data from https://world.openfoodfacts.org/ and more providers about to come.  
+
 
 ## Usage example for your code
 
@@ -28,7 +28,7 @@ deno run --allow-net https://deno.land/x/food@1.1.1/test-it.ts
 ```
 
 ## Contributions are welcome
-Feel free to create a pull request if you would like to improve things.
+Feel free to create a pull request if you would like to improve things like adding recipes etc.
   
 
 ## Support my Open Source Contributions  
