@@ -8,7 +8,7 @@ Feel free to add recipes etc.
 ```
   
 
-import { FoodInfoProvider } from "https://deno.land/x/food@1.1.0/food-info-provider.ts"
+import { FoodInfoProvider } from "https://deno.land/x/food@1.1.1/food-info-provider.ts"
 
 const productID = '737628064502'
 const foodInfo = await FoodInfoProvider.getProductInfo(productID)
@@ -22,7 +22,7 @@ console.log(`I found the following info for product ${productID}: \n${JSON.strin
 ```
   
 
-deno run --allow-net https://deno.land/x/food@1.1.0/test-it.ts
+deno run --allow-net https://deno.land/x/food@1.1.1/test-it.ts
   
   
 ```
