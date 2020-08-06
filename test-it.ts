@@ -1,5 +1,5 @@
 
-import { FoodInfoProvider } from "https://deno.land/x/food@1.1.1infoprovider.ts"
+import { FoodInfoProvider } from "https://deno.land/x/food@1.2.0/infoprovider.ts"
 
 const productID = '737628064502'
 const foodInfo = await FoodInfoProvider.getProductInfo(productID)

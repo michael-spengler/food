@@ -1,5 +1,3 @@
-# Food Module
-
 This module leverages data from https://world.openfoodfacts.org/ and more providers about to come.  
 
 
@@ -8,7 +6,8 @@ This module leverages data from https://world.openfoodfacts.org/ and more provid
 ```
   
 
-import { FoodInfoProvider } from "https://deno.land/x/food@1.1.1/food-info-provider.ts"
+
+import { FoodInfoProvider } from "https://deno.land/x/food@1.2.0/infoprovider.ts"
 
 const productID = '737628064502'
 const foodInfo = await FoodInfoProvider.getProductInfo(productID)
@@ -22,13 +21,15 @@ console.log(`I found the following info for product ${productID}: \n${JSON.strin
 ```
   
 
-deno run --allow-net https://deno.land/x/food@1.1.1/test-it.ts
+deno run --allow-net https://deno.land/x/food@1.2.0/test-it.ts
   
   
 ```
+  
 
 ## Contributions are welcome
 Feel free to create a pull request if you would like to improve things like adding recipes etc.
+  
   
 
 ## Support my Open Source Contributions  
