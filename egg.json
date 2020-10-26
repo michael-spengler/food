@@ -1,0 +1,10 @@
+{
+                                "name": "food",
+                                "description": "🦕    Deno module for food lovers 🍓🍍🍌. Feel free to enhance & contribute.",
+                                "homepage": "https://github.com/michael-spengler/food",
+                                "files": [
+                                  "./**/*.ts",
+                                  "README.md"
+                                ],
+                                "entry": "./mod.ts"
+                              }
